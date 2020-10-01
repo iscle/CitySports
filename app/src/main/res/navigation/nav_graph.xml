@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/matchesFragment"
+        android:name="me.iscle.elclub.MatchesFragment"
+        android:label="Partits"
+        tools:layout="@layout/fragment_matches">
+        <action
+            android:id="@+id/action_matchesFragment_to_matchFragment"
+            app:destination="@id/matchFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/matchFragment"
+        android:name="me.iscle.elclub.MatchFragment"
+        android:label="Partit"
+        tools:layout="@layout/fragment_match" >
+        <argument
+            android:name="match_id"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="me.iscle.elclub.HomeFragment"
+        android:label="Inici"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_matchesFragment"
+            app:destination="@id/matchesFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_homeFragment_to_teamFragment"
+            app:destination="@id/teamFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_homeFragment_to_campionatComarcalFragment"
+            app:destination="@id/campionatComarcalFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_homeFragment_to_torneigRegularFragment"
+            app:destination="@id/torneigRegularFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_homeFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/teamFragment"
+        android:name="me.iscle.elclub.TeamFragment"
+        android:label="Equip"
+        tools:layout="@layout/fragment_team" />
+    <fragment
+        android:id="@+id/campionatComarcalFragment"
+        android:name="me.iscle.elclub.CampionatComarcalFragment"
+        android:label="Campionat Comarcal"
+        tools:layout="@layout/fragment_campionat_comarcal" />
+    <fragment
+        android:id="@+id/torneigRegularFragment"
+        android:name="me.iscle.elclub.TorneigRegularFragment"
+        android:label="Torneig Regular"
+        tools:layout="@layout/fragment_torneig_regular" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="me.iscle.elclub.LoginFragment"
+        android:label="Iniciar Sessió"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="me.iscle.elclub.RegisterFragment"
+        android:label="Registrar-se"
+        tools:layout="@layout/fragment_register" />
+</navigation>
