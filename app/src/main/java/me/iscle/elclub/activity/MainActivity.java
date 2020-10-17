@@ -1,4 +1,4 @@
-package me.iscle.elclub;
+package me.iscle.elclub.activity;
 
 import android.os.Bundle;
 
@@ -11,6 +11,7 @@ import androidx.navigation.ui.NavigationUI;
 import java.util.HashSet;
 import java.util.Set;
 
+import me.iscle.elclub.R;
 import me.iscle.elclub.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {

@@ -1,4 +1,4 @@
-package me.iscle.elclub;
+package me.iscle.elclub.fragment;
 
 import android.app.Dialog;
 import android.os.Bundle;
@@ -22,6 +22,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
+import me.iscle.elclub.MarginItemDecoration;
 import me.iscle.elclub.adapter.PlayerAdapter;
 import me.iscle.elclub.adapter.PlayerSpinnerAdapter;
 import me.iscle.elclub.databinding.DialogAddPlayerBinding;

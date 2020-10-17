@@ -1,4 +1,4 @@
-package me.iscle.elclub;
+package me.iscle.elclub.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import java.util.List;
 
+import me.iscle.elclub.MarginItemDecoration;
 import me.iscle.elclub.adapter.PartitsAdapter;
 import me.iscle.elclub.databinding.FragmentCampionatComarcalCalendariBinding;
 import me.iscle.elclub.model.Partit;

@@ -1,4 +1,4 @@
-package me.iscle.elclub;
+package me.iscle.elclub.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

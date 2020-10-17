@@ -7,7 +7,7 @@
     android:layout_margin="8dp"
     app:cardCornerRadius="10dp"
     app:cardElevation="5dp"
-    tools:context=".TorneigRegularCalendariFragment">
+    tools:context=".fragment.TorneigRegularCalendariFragment">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout

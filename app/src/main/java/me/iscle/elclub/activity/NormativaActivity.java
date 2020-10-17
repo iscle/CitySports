@@ -1,14 +1,16 @@
-package me.iscle.elclub;
+package me.iscle.elclub.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class AboutActivity extends AppCompatActivity {
+import me.iscle.elclub.R;
+
+public class NormativaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about);
+        setContentView(R.layout.activity_normativa);
     }
 }

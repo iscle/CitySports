@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_matches"/>
     <fragment
         android:id="@+id/matchFragment"
-        android:name="me.iscle.elclub.MatchFragment"
+        android:name="me.iscle.elclub.fragment.MatchFragment"
         android:label="Partit"
         tools:layout="@layout/fragment_match" >
         <argument
@@ -21,7 +21,7 @@
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="me.iscle.elclub.HomeFragment"
+        android:name="me.iscle.elclub.fragment.HomeFragment"
         android:label="Inici"
         tools:layout="@layout/fragment_home">
         <action
@@ -69,12 +69,12 @@
     </fragment>
     <fragment
         android:id="@+id/teamFragment"
-        android:name="me.iscle.elclub.TeamFragment"
+        android:name="me.iscle.elclub.fragment.TeamFragment"
         android:label="Equip"
         tools:layout="@layout/fragment_team" />
     <fragment
         android:id="@+id/campionatComarcalFragment"
-        android:name="me.iscle.elclub.CampionatComarcalFragment"
+        android:name="me.iscle.elclub.fragment.CampionatComarcalFragment"
         android:label="Campionat Comarcal"
         tools:layout="@layout/fragment_campionat_comarcal" >
         <action
@@ -101,7 +101,7 @@
     </fragment>
     <fragment
         android:id="@+id/torneigRegularFragment"
-        android:name="me.iscle.elclub.TorneigRegularFragment"
+        android:name="me.iscle.elclub.fragment.TorneigRegularFragment"
         android:label="Torneig Regular"
         tools:layout="@layout/fragment_torneig_regular" >
         <action
@@ -128,17 +128,17 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="me.iscle.elclub.LoginFragment"
+        android:name="me.iscle.elclub.fragment.LoginFragment"
         android:label="Iniciar Sessió"
         tools:layout="@layout/fragment_login" />
     <fragment
         android:id="@+id/registerFragment"
-        android:name="me.iscle.elclub.RegisterFragment"
+        android:name="me.iscle.elclub.fragment.RegisterFragment"
         android:label="Registrar-se"
         tools:layout="@layout/fragment_register" />
     <fragment
         android:id="@+id/campionatComarcalCalendariFragment"
-        android:name="me.iscle.elclub.CampionatComarcalCalendariFragment"
+        android:name="me.iscle.elclub.fragment.CampionatComarcalCalendariFragment"
         android:label="Calendari"
         tools:layout="@layout/fragment_campionat_comarcal_calendari" >
         <action
@@ -147,22 +147,22 @@
     </fragment>
     <fragment
         android:id="@+id/campionatComarcalReglamentFragment"
-        android:name="me.iscle.elclub.CampionatComarcalReglamentFragment"
+        android:name="me.iscle.elclub.fragment.CampionatComarcalReglamentFragment"
         android:label="Reglament"
         tools:layout="@layout/fragment_campionat_comarcal_reglament" />
     <fragment
         android:id="@+id/torneigRegularReglamentFragment"
-        android:name="me.iscle.elclub.TorneigRegularReglamentFragment"
+        android:name="me.iscle.elclub.fragment.TorneigRegularReglamentFragment"
         android:label="Reglament"
         tools:layout="@layout/fragment_torneig_regular_reglament" />
     <fragment
         android:id="@+id/torneigRegularCalendariFragment"
-        android:name="me.iscle.elclub.TorneigRegularCalendariFragment"
+        android:name="me.iscle.elclub.fragment.TorneigRegularCalendariFragment"
         android:label="Calendari"
         tools:layout="@layout/fragment_torneig_regular_calendari" />
     <fragment
         android:id="@+id/campionatComarcalClassificacioFragment"
-        android:name="me.iscle.elclub.CampionatComarcalClassificacioFragment"
+        android:name="me.iscle.elclub.fragment.CampionatComarcalClassificacioFragment"
         android:label="Classificació"
         tools:layout="@layout/fragment_campionat_comarcal_classificacio" />
 </navigation>
