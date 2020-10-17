@@ -58,7 +58,7 @@ public class MatchFragment extends Fragment {
         binding.playerRecycler.setAdapter(playerAdapter);
         binding.playerRecycler.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
         binding.playerRecycler.addItemDecoration(new DividerItemDecoration(getContext(), LinearLayoutManager.VERTICAL));
-        binding.playerRecycler.addItemDecoration(new MarginItemDecoration());
+        binding.playerRecycler.addItemDecoration(new MarginItemDecoration(true));
         binding.addPlayer.setOnClickListener(v -> new AddPlayerDialog(matchId, player -> {
             ElClubRepository.getInstance().getService().addMatchPlayer(matchId, player.getId()).enqueue(new Callback<Void>() {
                 @Override

@@ -32,7 +32,7 @@ public class PartitsAdapter extends RecyclerView.Adapter<PartitsAdapter.ViewHold
         final Partit partit = partits.get(position);
 
         holder.binding.location.setText(partit.getLocation());
-        holder.binding.date.setText(DateFormat.getDateTimeInstance(DateFormat.SHORT, DateFormat.SHORT).format(new Date(TimeUnit.MILLISECONDS.convert(partit.getDate(), TimeUnit.SECONDS))));
+        holder.binding.date.setText(DateFormat.getDateInstance(DateFormat.SHORT).format(new Date(TimeUnit.MILLISECONDS.convert(partit.getDate(), TimeUnit.SECONDS))));
         holder.binding.team.setText(partit.getTeam());
         holder.binding.playerCount.setText(String.valueOf(partit.getPlayerCount()));
         holder.binding.getRoot().setOnClickListener(v -> listener.onClick(partits.get(position).getId()));

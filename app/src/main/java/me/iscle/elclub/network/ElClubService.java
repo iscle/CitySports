@@ -3,6 +3,7 @@ package me.iscle.elclub.network;
 import java.util.List;
 import java.util.Map;
 
+import me.iscle.elclub.model.Jornada;
 import me.iscle.elclub.model.Partit;
 import me.iscle.elclub.model.Player;
 import retrofit2.Call;
@@ -34,5 +35,11 @@ public interface ElClubService {
 
     @POST("player")
     Call<Partit> addPlayer(@Body Map<String, Object> body);
+
+    @GET("team/{id}/players")
+    Call<List<Player>> getTeamPlayers(@Path("id") int teamId);
+
+    @GET("team/{id}/torneig-regular/jornades")
+    Call<List<Jornada>> getTeamTorneigRegularJornades(@Path("id") int teamId);
 
 }

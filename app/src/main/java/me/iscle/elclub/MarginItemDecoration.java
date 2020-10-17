@@ -12,12 +12,18 @@ public class MarginItemDecoration extends RecyclerView.ItemDecoration {
 
     private final static int space = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 8, Resources.getSystem().getDisplayMetrics());
 
+    private final boolean fixMargin;
+
+    public MarginItemDecoration(boolean fixMargin) {
+        this.fixMargin = fixMargin;
+    }
+
     @Override
     public void getItemOffsets(@NonNull Rect outRect, @NonNull View view, @NonNull RecyclerView parent, @NonNull RecyclerView.State state) {
-        if (parent.getChildAdapterPosition(view) != 0) {
+        if (fixMargin || parent.getChildAdapterPosition(view) == 0) {
             outRect.top = space;
         }
-        outRect.top = space;
+        //outRect.top = space;
         outRect.left = space;
         outRect.right = space;
         outRect.bottom = space;
